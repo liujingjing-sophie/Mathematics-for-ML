@@ -1,13 +1,8 @@
 ---
 title: "Mathematics for Machine Learning 知识总结"
-author: "Your Name"
+author: "CL"
 date: "2025-03-30"
 ---
-
-<!-- MathJax for rendering LaTeX math -->
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
 
 # **Mathematics for Machine Learning 知识总结**
 
@@ -19,16 +14,7 @@ date: "2025-03-30"
 - **向量（Vector）** 是一个数值列表，通常用于表示数据点或参数。
 - **矩阵（Matrix）** 是一个数值表（二维数组），可以描述数据的转换、存储特征等。
 
-#### **公式**
-一个 \( n \)-维向量：
-$$
-\mathbf{x} = \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix}
-$$
 
-一个 \( m \times n \) 维矩阵：
-$$
-A = \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{bmatrix}
-$$
 
 #### **示例应用**
 ✅ **图像处理**：图像像素数据可以表示为矩阵，每个元素是一个像素值，如灰度图像用 \( 256 \times 256 \) 的矩阵表示。
@@ -41,16 +27,8 @@ $$
 - **加法与减法**：按元素相加或相减
 - **标量乘法**：矩阵中的每个元素乘以一个常数
 - **矩阵乘法**：
-$$
-C = AB
-$$
-其中 \( A \) 是 \( m \times n \)，\( B \) 是 \( n \times p \)，则 \( C \) 是 \( m \times p \)。
 
-#### **公式**
-矩阵乘法：
-$$
-(A B)_{ij} = \sum_{k=1}^{n} A_{ik} B_{kj}
-$$
+矩阵乘法
 
 #### **示例应用**
 ✅ **神经网络计算**：输入 \( X \) 乘以权重矩阵 \( W \) 以计算隐藏层激活值：
@@ -64,12 +42,7 @@ $$
 #### **数学概念**
 矩阵可表示线性变换，如旋转、缩放、反射等。
 
-#### **公式**
-线性变换：
-$$
-Ax = y
-$$
-其中 \( A \) 是矩阵，\( x \) 是输入向量，\( y \) 是变换后的向量。
+
 
 #### **示例应用**
 ✅ **主成分分析（PCA）**：使用投影变换降低数据维度。
@@ -80,11 +53,6 @@ $$
 #### **数学概念**
 行列式度量矩阵的“体积”变化率。
 
-#### **公式**
-对于 \( 2 \times 2 \) 矩阵：
-$$
-\det(A) = a_{11} a_{22} - a_{12} a_{21}
-$$
 
 #### **示例应用**
 ✅ **计算 Jacobian 矩阵**：在神经网络反向传播中用于梯度计算。
