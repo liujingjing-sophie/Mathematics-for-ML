@@ -1,3 +1,14 @@
+---
+title: "Mathematics for Machine Learning 知识总结"
+author: "Your Name"
+date: "2025-03-30"
+---
+
+<!-- MathJax for rendering LaTeX math -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 # **Mathematics for Machine Learning 知识总结**
 
 ## **1. 线性代数（Linear Algebra）**
